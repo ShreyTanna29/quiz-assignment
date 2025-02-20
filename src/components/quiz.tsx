@@ -113,28 +113,29 @@ export default function Quiz() {
       return (
         <div className="grid grid-cols-1 gap-4">
           <AnimatePresence>
-            {Object.entries(currentQ.options).map(([key, value]) => (
-              <motion.button
-                key={key}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                onClick={() => handleAnswerSelect(value, key)}
-                className={`p-4 rounded-lg text-left transition-colors cursor-pointer ${
-                  selectedAnswer
-                    ? key === currentQ.answer
-                      ? "bg-green-500 text-white"
-                      : key === selectedAnswer
-                      ? "bg-red-500 text-white"
-                      : "bg-gray-100"
-                    : "bg-gray-100 hover:bg-gray-200"
-                }`}
-              >
-                {key}: {value}
-              </motion.button>
-            ))}
+            {currentQ.options &&
+              Object.entries(currentQ.options).map(([key, value]) => (
+                <motion.button
+                  key={key}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => handleAnswerSelect(value, key)}
+                  className={`p-4 rounded-lg text-left transition-colors cursor-pointer ${
+                    selectedAnswer
+                      ? key === currentQ.answer
+                        ? "bg-green-500 text-white"
+                        : key === selectedAnswer
+                        ? "bg-red-500 text-white"
+                        : "bg-gray-100"
+                      : "bg-gray-100 hover:bg-gray-200"
+                  }`}
+                >
+                  {key}: {value}
+                </motion.button>
+              ))}
           </AnimatePresence>
         </div>
       );
