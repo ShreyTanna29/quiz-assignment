@@ -2,6 +2,8 @@
 
 A modern, animated quiz application built with React, TypeScript, and Framer Motion featuring real-time feedback, progress tracking, and persistent storage.
 
+- check it out : https://quiz-assignment-six.vercel.app/quiz
+
 ## ✨ Features
 
 - **Dynamic Question Types**
@@ -86,3 +88,15 @@ npm run dev
 - Category-based quizzes
 - Difficulty levels
 - Custom quiz creation
+
+
+## Images
+
+![Screenshot from 2025-02-20 15-57-30](https://github.com/user-attachments/assets/5b7b06d7-b6ba-4a32-b5e8-55793ce3f6e0)
+
+![Screenshot from 2025-02-20 15-57-39](https://github.com/user-attachments/assets/2a06f2c6-45dc-432a-989d-ac932d6ad025)
+
+
+![Screenshot from 2025-02-20 15-57-54](https://github.com/user-attachments/assets/9a8e4e7c-09fc-4519-80f3-6e46c809c507)
+![Screenshot from 2025-02-20 15-58-16](https://github.com/user-attachments/assets/4c161f54-5086-49f9-b035-2d32797b7f4d)
+
